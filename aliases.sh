@@ -20,7 +20,17 @@ alias tmk='tmux kill-session -t'
 
 # oppdater lokale versjoner fra GitHub
 alias jrCuLiTe_update='\
+LOGFILE=~/jrCuLiTe/update.log; \
+echo "[jrCuLiTe] Starter oppdatering..." | tee -a "$LOGFILE"; \
+echo "[jrCuLiTe] Henter install.sh..." | tee -a "$LOGFILE"; \
 curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/install.sh -o ~/jrCuLiTe/install.sh && \
+echo "[jrCuLiTe] install.sh oppdatert." | tee -a "$LOGFILE"; \
+echo "[jrCuLiTe] Henter aliases.sh..." | tee -a "$LOGFILE"; \
 curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/aliases.sh -o ~/jrCuLiTe/aliases.sh && \
+echo "[jrCuLiTe] aliases.sh oppdatert." | tee -a "$LOGFILE"; \
+echo "[jrCuLiTe] Henter tmux.conf..." | tee -a "$LOGFILE"; \
 curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/tmux.conf -o ~/.tmux.conf && \
-source ~/.bashrc'
+echo "[jrCuLiTe] tmux.conf oppdatert." | tee -a "$LOGFILE"; \
+echo "[jrCuLiTe] Oppdaterer shell..." | tee -a "$LOGFILE"; \
+source ~/.bashrc && \
+echo "[jrCuLiTe] Oppdatering fullført." | tee -a "$LOGFILE"'
