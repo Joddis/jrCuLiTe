@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 
-echo "[jrCustom] Starter installasjon..."
+echo "[jrCuLiTe] Starter installasjon..."
 
 if command -v apt >/dev/null; then
-    echo "[jrCustom] Installerer tmux..."
+    echo "[jrCuLiTe] Installerer tmux..."
     sudo apt update -y
     sudo apt install -y tmux curl
 elif command -v dnf >/dev/null; then
@@ -13,21 +13,21 @@ elif command -v pacman >/dev/null; then
     sudo pacman -Sy --noconfirm tmux curl
 fi
 
-echo "[jrCustom] Laster ned tmux.conf..."
+echo "[jrCuLiTe] Laster ned tmux.conf..."
 curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/tmux.conf -o ~/.tmux.conf
 
-echo "[jrCustom] Oppretter jrCustom-katalog..."
-mkdir -p ~/jrCustom
+echo "[jrCuLiTe] Oppretter jrCuLiTe-katalog..."
+mkdir -p ~/jrCuLiTe
 
-echo "[jrCustom] Installerer alias-fil..."
-cp "$(dirname "$0")/aliases.sh" ~/jrCustom/aliases.sh
+echo "[jrCuLiTe] Installerer alias-fil..."
+cp "$(dirname "$0")/aliases.sh" ~/jrCuLiTe/aliases.sh
 
-echo "[jrCustom] Oppdaterer .bashrc..."
-if ! grep -q "jrCustom/aliases.sh" ~/.bashrc; then
+echo "[jrCuLiTe] Oppdaterer .bashrc..."
+if ! grep -q "jrCuLiTe/aliases.sh" ~/.bashrc; then
     {
         echo ""
-        echo "# jrCustom aliases"
-        echo "source ~/jrCustom/aliases.sh"
+        echo "# jrCuLiTe aliases"
+        echo "source ~/jrCuLiTe/aliases.sh"
     } >> ~/.bashrc
 fi
 
