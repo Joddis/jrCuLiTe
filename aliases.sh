@@ -44,4 +44,5 @@ echo "[jrCuLiTe] info.txt oppdatert." | tee -a "$LOGFILE"; \
 
 echo "[jrCuLiTe] Oppdaterer shell..." | tee -a "$LOGFILE"; \
 source ~/.bashrc && \
+source ~/jrCuLiTe/aliases.sh && \
 echo "[jrCuLiTe] Oppdatering fullført." | tee -a "$LOGFILE"'
