@@ -18,6 +18,9 @@ alias tm='tmux attach || tmux new'
 alias tml='tmux ls'
 alias tmk='tmux kill-session -t'
 
+# vis min nyttige info/tips/triks notat
+alias jrI='cat ~/jrCuLiTe/info.txt'
+
 # oppdater lokale versjoner fra GitHub
 alias jrCuLiTe_update='\
 LOGFILE=~/jrCuLiTe/update.log; \
