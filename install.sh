@@ -22,6 +22,9 @@ mkdir -p ~/jrCuLiTe
 echo "[jrCuLiTe] Laster ned aliases.sh..."
 curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/aliases.sh -o ~/jrCuLiTe/aliases.sh
 
+echo "[jrCuLiTe] Laster ned info.txt..."
+curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/info.txt -o ~/jrCuLiTe/info.txt
+
 echo "[jrCuLiTe] Oppdaterer .bashrc..."
 if ! grep -q "jrCuLiTe/aliases.sh" ~/.bashrc; then
     {
