@@ -38,7 +38,7 @@ echo "[jrCuLiTe] Henter tmux.conf..." | tee -a "$LOGFILE"; \
 curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/tmux.conf -o ~/.tmux.conf && \
 echo "[jrCuLiTe] tmux.conf oppdatert." | tee -a "$LOGFILE"; \
 
-echo "[jrCuLiTe] Oppdaterer info.txt..." | tee -a "$LOGFILE" \
+echo "[jrCuLiTe] Oppdaterer info.txt..." | tee -a "$LOGFILE"; \
 curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/info.txt -o ~/jrCuLiTe/info.txt && \
 echo "[jrCuLiTe] info.txt oppdatert." | tee -a "$LOGFILE"; \
 
