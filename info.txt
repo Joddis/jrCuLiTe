@@ -1,0 +1,12 @@
+jrCuLiTe – nyttige ting
+
+Alias:
+  jrCuLiTe_update – oppdaterer hele oppsettet
+  jrInfo – viser denne filen
+
+Tmux:
+  Alt + piltaster – navigasjon
+  Alt + Shift + piltaster – resize
+
+Docker:
+  dps – docker ps --format
