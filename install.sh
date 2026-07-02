@@ -30,9 +30,12 @@ curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/aliases.sh -o 
 echo "[jrCuLiTe] Laster ned info.txt..."
 curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/info.txt -o ~/jrCuLiTe/info.txt
 
+# --- Last ned update.sh ---
+echo "[jrCuLiTe] Laster ned update.sh..."
+curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/update.sh -o ~/jrCuLiTe/update.sh
+
 # --- Last ned status-scripts ---
 echo "[jrCuLiTe] Laster ned status-scripts..."
-
 curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/tmux_status.sh -o ~/jrCuLiTe/tmux_status.sh
 curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/tmux_status_plugins.sh -o ~/jrCuLiTe/tmux_status_plugins.sh
 curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/tmux_status_kb.sh -o ~/jrCuLiTe/tmux_status_kb.sh
