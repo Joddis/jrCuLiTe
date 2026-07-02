@@ -3,9 +3,9 @@ set -e
 
 echo "[jrCuLiTe] Starter installasjon..."
 
-# --- Installer tmux + curl ---
+# --- Installer tmux + curl + git ---
 if command -v apt >/dev/null; then
-    echo "[jrCuLiTe] Installerer tmux..."
+    echo "[jrCuLiTe] Installerer tmux, curl og git..."
     sudo apt update -y
     sudo apt install -y tmux curl git
 elif command -v dnf >/dev/null; then
@@ -29,6 +29,19 @@ curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/aliases.sh -o 
 # --- Last ned info.txt ---
 echo "[jrCuLiTe] Laster ned info.txt..."
 curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/info.txt -o ~/jrCuLiTe/info.txt
+
+# --- Last ned status-scripts ---
+echo "[jrCuLiTe] Laster ned status-scripts..."
+
+curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/tmux_status.sh -o ~/jrCuLiTe/tmux_status.sh
+curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/tmux_status_plugins.sh -o ~/jrCuLiTe/tmux_status_plugins.sh
+curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/tmux_status_kb.sh -o ~/jrCuLiTe/tmux_status_kb.sh
+curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/tmux_status_kb2.sh -o ~/jrCuLiTe/tmux_status_kb2.sh
+curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/tmux_status_kb3.sh -o ~/jrCuLiTe/tmux_status_kb3.sh
+
+# --- Sett +x på alle .sh-filer ---
+echo "[jrCuLiTe] Setter kjørbarhet på alle scripts..."
+chmod +x ~/jrCuLiTe/*.sh
 
 # --- Oppdater .bashrc ---
 echo "[jrCuLiTe] Oppdaterer .bashrc..."
