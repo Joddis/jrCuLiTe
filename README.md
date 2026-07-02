@@ -1,4 +1,4 @@
-# jrCuLiTe
+# jrCuLiTe (my Customization of Linux Terminal)
 Standardisert setup for tmux, alias og shell-miljø på alle maskiner.
 
 ## Installasjon
