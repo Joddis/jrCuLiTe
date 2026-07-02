@@ -1,12 +1,26 @@
-jrCuLiTe – nyttige ting
+=== jrCuLiTe Info ===
+jrI              : viser denne filen
+jrCuLiTe_update  : oppdaterer hele oppsettet
 
-Alias:
-  jrCuLiTe_update – oppdaterer hele oppsettet
-  jrInfo – viser denne filen
 
-Tmux:
-  Alt + piltaster – navigasjon
-  Alt + Shift + piltaster – resize
 
-Docker:
-  dps – docker ps --format
+
+=== TMUX shortcuts ===
+
+=== DOCKER shortcuts ===
+jrDocStat
+
+=== DOCKER commands ===
+docker ps
+docker stats
+docker exec -it <name> sh/bash # litt usikker på om denne er riktig
+
+
+
+
+
+=== Viktige stier ===
+~/jrCuLiTe/
+
+=== Viktige filer ===
+~.tmux.conf
