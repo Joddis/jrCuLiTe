@@ -19,8 +19,8 @@ curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/tmux.conf -o ~
 echo "[jrCuLiTe] Oppretter jrCuLiTe-katalog..."
 mkdir -p ~/jrCuLiTe
 
-echo "[jrCuLiTe] Installerer alias-fil..."
-cp "$(dirname "$0")/aliases.sh" ~/jrCuLiTe/aliases.sh
+echo "[jrCuLiTe] Laster ned aliases.sh..."
+curl -fsSL https://raw.githubusercontent.com/joddis/jrCuLiTe/main/aliases.sh -o ~/jrCuLiTe/aliases.sh
 
 echo "[jrCuLiTe] Oppdaterer .bashrc..."
 if ! grep -q "jrCuLiTe/aliases.sh" ~/.bashrc; then
