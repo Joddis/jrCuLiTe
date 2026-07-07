@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-LOGFILE=~/jrCuLiTe/jrCuLiTe_update.log
+LOGFILE=~/jrCuLiTe/update.log
 
 echo "[jrCuLiTe] Starter oppdatering..." | tee -a "$LOGFILE"
 
