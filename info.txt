@@ -1,24 +1,40 @@
 ==================================
 === INFO SOM ER VIKTIG FOR MEG ===
 ==================================
-
 === jrCuLiTe shortcuts commands ===
 jrI              : viser denne filen
 jrCuLiTe_update  : oppdaterer hele oppsettet
 
-=== egne shortcuts commands ===
-jrDocStat : viser egenversjon av docker stats
+=== egne kommandoer som kjører egne scripts ===
+jrDocStat        : viser egenversjon av docker stats
+jrCleanHDD       : rydder søppel fra disken
+
+=== Linux System shortcutkeys ===
+..               : cd ..
+...              : cd ../..
+update           : update && upgrade -y
+ll               : ls -alF  : vis alle filer, long list, med symboler
+la               : ls -A    : vis alle filer, i kolonner, ikke systemdirs
+l                : ls -CF   : viser ikke skjulte filer, i kolonner, med symboler
 
 === DOCKER commands ===
 docker ps
 docker stats
-docker exec -it <name> sh/bash # litt usikker på om denne er riktig
+docker exec -it <name> sh/bash
 
 === TMUX ===
-  : shortcutkeys
-  alt + n         : next panel
-  alt + shift + n : neste vindu
-  alt + ctrl + n  : neste session
+  : shortcommands (outside)
+  tm                               = tmux og/eller tmux a
+  tml                              = tmux ls (lister alle kjørende)
+  tmk -t x                         = tmux kill-session -t x (hvor x er indexnr)
+  : shortcutkeys (inside)
+  prefix + c                       = new window
+  prefix + :                       = command mode
+    new-session                    = starter ny session
+    kill-session -t indexnr/navn   = lukker den spesifikke session
+  alt + n                          = next panel
+  alt + shift + n                  = neste vindu
+  alt + ctrl + n                   = neste session
   : egne scripts
   ~/jrCuLiTe/tmux_status.sh : viser en meny, for å hente ut div. tmux statuser
   : viktige stier
