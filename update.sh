@@ -6,6 +6,7 @@ LOGFILE=~/jrCuLiTe/update.log
 echo "[jrCuLiTe] Starter oppdatering..." | tee -a "$LOGFILE"
 
 TMPDIR=~/jrCuLiTe-temp
+rm -rf "$TMPDIR"
 mkdir -p "$TMPDIR"
 
 # --- Last ned alle filer fra GitHub ---
