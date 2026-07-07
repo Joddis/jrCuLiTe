@@ -1,28 +1,30 @@
-=== jrCuLiTe Info ===
+==================================
+=== INFO SOM ER VIKTIG FOR MEG ===
+==================================
+
+=== jrCuLiTe shortcuts commands ===
 jrI              : viser denne filen
 jrCuLiTe_update  : oppdaterer hele oppsettet
 
-
-=== TMUX ===
-~/jrCuLiTe/tmux_status.sh : viser en meny, for å hente ut div. tmux statuser
-
-
-=== DOCKER shortcuts ===
-jrDocStat
-
+=== egne shortcuts commands ===
+jrDocStat : viser egenversjon av docker stats
 
 === DOCKER commands ===
 docker ps
 docker stats
 docker exec -it <name> sh/bash # litt usikker på om denne er riktig
 
+=== TMUX ===
+  : shortcutkeys
+  alt + n         : next panel
+  alt + shift + n : neste vindu
+  alt + ctrl + n  : neste session
+  : egne scripts
+  ~/jrCuLiTe/tmux_status.sh : viser en meny, for å hente ut div. tmux statuser
+  : viktige stier
+  ~/jrCuLiTe/
+  : viktige filer
+  ~.tmux.conf
 
 === Viktige stier ===
-~/jrCuLiTe/
-
-
 === Viktige filer ===
-~.tmux.conf
-
-
-
