@@ -49,4 +49,10 @@ if [ -f "$INSTALL_DIR/aliases.sh" ]; then
     source "$INSTALL_DIR/aliases.sh"
 fi
 
+# Kjør NAS-tilkobling
+if [ -f "./Connect2linuxShare.sh" ]; then
+    chmod +x ./Connect2linuxShare.sh
+    ./Connect2linuxShare.sh
+fi
+
 echo "[jrCuLiTe] Installasjon fullført."
