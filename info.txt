@@ -10,7 +10,7 @@ jrDocStat        : viser egenversjon av docker stats
 jrCleanHDD       : rydder søppel fra disken
 
 === Linux System shortcutkeys ===
-cls              : clear history og clear skjerm
+cls              : clear history, clear tmux history og clear skjerm
 ..               : cd ..
 ...              : cd ../..
 update           : update && upgrade -y
