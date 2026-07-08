@@ -15,7 +15,7 @@ alias tml='tmux ls'
 alias tmk='tmux kill-session -t'
 
 # system
-alias cls='history -c && clear'
+alias cls='history -c && tmux clear-history && clear'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias update='sudo apt update && sudo apt upgrade -y'
