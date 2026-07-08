@@ -71,7 +71,7 @@ fi
 # ------------------------------------------------------------
 if ! grep -q "$NAS_IP/$NAS_SHARE" /etc/fstab; then
     echo "[linuxShare] Legger inn fstab-linje..."
-    echo "//$NAS_IP/$NAS_SHARE $MOUNT_POINT cifs credentials=$CREDENTIALS_FILE,uid=1000,gid=1000,iocharset=utf8,file_mode=0777,dir_mode=0777,nofail 0 0" \
+    echo "//$NAS_IP/$NAS_SHARE $MOUNT_POINT cifs credentials=$CREDENTIALS_FILE,uid=1000,gid=1000,iocharset=utf8,file_mode=0777,dir_mode=0777,vers=1.0,nofail 0 0" \
         | sudo tee -a /etc/fstab >/dev/null
 fi
 
