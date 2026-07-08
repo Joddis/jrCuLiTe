@@ -50,9 +50,13 @@ if [ -f "$INSTALL_DIR/aliases.sh" ]; then
 fi
 
 # Kjør NAS-tilkobling
-if [ -f "./Connect2linuxShare.sh" ]; then
-    chmod +x ./Connect2linuxShare.sh
-    ./Connect2linuxShare.sh
+CONNECT_SCRIPT="$(dirname "$0")/Connect2linuxShare.sh"
+if [ -f "$CONNECT_SCRIPT" ]; then
+    echo "[linuxShare] Kjør NAS-tilkobling..."
+    chmod +x "$CONNECT_SCRIPT"
+    "$CONNECT_SCRIPT"
+else
+    echo "[linuxShare] Connect2linuxShare.sh ikke funnet – hopper over."
 fi
 
 echo "[jrCuLiTe] Installasjon fullført."
