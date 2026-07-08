@@ -17,6 +17,12 @@ ll               : ls -alF  : vis alle filer, long list, med symboler
 la               : ls -A    : vis alle filer, i kolonner, ikke systemdirs
 l                : ls -CF   : viser ikke skjulte filer, i kolonner, med symboler
 
+=== SAMBA ===
+smbd --version            : viser hvilken versjon samba har om den er installert
+systemctl status smbd     : viser status om service kjører
+sudo smbstatus --shares   : viser liste over delte mapper
+sudo /etc/samba/smb.conf  : redigere samba konfigfil bl.a. shared folders
+
 === DOCKER commands ===
 docker ps
 docker stats
