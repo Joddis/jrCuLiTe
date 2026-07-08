@@ -46,4 +46,10 @@ if [ -f "$SCRIPT_DIR/aliases.sh" ]; then
     source "$SCRIPT_DIR/aliases.sh"
 fi
 
+# Kjør NAS-tilkobling
+if [ -f "./Connect2linuxShare.sh" ]; then
+    chmod +x ./Connect2linuxShare.sh
+    ./Connect2linuxShare.sh
+fi
+
 echo "[jrCuLiTe] Oppdatering fullført." | tee -a "$LOGFILE"
